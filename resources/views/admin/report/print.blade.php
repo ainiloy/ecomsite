@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="company_name text-center">
-                    <h3><b>eShopping</b> </h3>
+                    <h3><b>TopGear</b> </h3>
                     <h6>All Order Details
                     </h6>
                 </div>

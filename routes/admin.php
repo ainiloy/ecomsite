@@ -93,7 +93,7 @@ Route::group(['namespace'=>'App\Http\Controllers\Admin', 'middleware' =>'is_admi
 		Route::post('/update','CampaignController@update')->name('campaign.update');
 	});
 
-	//__campaign product routes__//
+	//campaign product routes
 	Route::group(['prefix'=>'campaign-product'], function(){
 		Route::get('/{campaign_id}','CampaignController@campaignProduct')->name('campaign.product');
 		Route::get('/add/{id}/{campaign_id}','CampaignController@ProductAddToCampaign')->name('add.product.to.campaign');
@@ -170,7 +170,7 @@ Route::group(['namespace'=>'App\Http\Controllers\Admin', 'middleware' =>'is_admi
 
 	    });
 
-		//Blog category
+		//blog category
 	    Route::group(['prefix'=>'blog-category'], function(){
 			Route::get('/','BlogController@index')->name('admin.blog.category');
 			Route::post('/store','BlogController@store')->name('blog.category.store');
@@ -179,7 +179,7 @@ Route::group(['namespace'=>'App\Http\Controllers\Admin', 'middleware' =>'is_admi
 			Route::post('/update','BlogController@update')->name('blog.category.update');
 		});
 
-	    //__role create__
+	    //role create
 	    Route::group(['prefix'=>'role'], function(){
 			Route::get('/','RoleController@index')->name('manage.role');
 			Route::get('/create','RoleController@create')->name('create.role');
@@ -189,7 +189,7 @@ Route::group(['namespace'=>'App\Http\Controllers\Admin', 'middleware' =>'is_admi
 			Route::post('/update','RoleController@update')->name('update.role');
 		});
 
-	    //__report routes__//
+	    //report routes
 	    Route::group(['prefix'=>'report'], function(){
 			Route::get('/order','OrderController@Reportindex')->name('report.order.index');
 			Route::get('/order/print','OrderController@ReportOrderPrint')->name('report.order.print');

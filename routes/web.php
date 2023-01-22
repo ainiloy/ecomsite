@@ -98,7 +98,4 @@ Route::get('oauth/{driver}', [App\Http\Controllers\Auth\LoginController::class, 
 Route::get('oauth/{driver}/callback', [App\Http\Controllers\Auth\LoginController::class, 'handleProviderCallback'])->name('social.callback');
 
 
-
-
-
 Route::get('send/notification', [App\Http\Controllers\Front\CartController::class, 'sendNotification']);
